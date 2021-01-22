@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+body {
+	background-image:url(../Downloads/background.jpg);
+	background-position:center;
+	background-size:1500px 1500px;
+	font-family:sans-serif;
+	margin-top:40px;
+	overflow-x: hidden;
+
+}
+.regform{
+	width:800px;
+	background-color:rgb(0,0,0,6);
+	margin:auto;
+	color:#ffffff;
+	padding:10px 0px 10px 0px;
+	text-align:center;
+	border-radius: 15px 15px 0px 0px;
+}
+.main {
+	background-color:rgb(0,0,0,0.5);
+	width: 800px;
+	margin:auto;
+}
+form {
+	padding:10px;
+}
+#name {
+	width:100%;
+	height:100px;
+}
+.name {
+	margin-left:25px;
+	margin-top:20px;
+	width:125px;
+	color:white;
+	font-size:18px;
+	font-weight:700;
+	
+}
+.firstname {
+	position:relative;
+	left:20px;
+	top:-35px;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 10px;
+	font-size:15px;
+}
+.middlename {
+	position:relative;
+	left:10px;
+	top:-35px;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 10px;
+	font-size:15px;
+	
+}
+.lastname {
+	position:relative;
+	left:10px;
+	top:-32px;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 10px;
+	font-size:15px;
+	
+}
+.firstlabel {
+	position:relative;
+	color:#E5E5E5;
+	font-size:14px;
+	left:100px;
+	top:5px;
+}
+.middlelabel {
+	position:relative;
+	color:#E5E5E5;
+	font-size:14px;
+	left:100px;
+	top:5px;
+	
+}
+.lastlabel {
+	position:relative;
+	color:#E5E5E5;
+	font-size:14px;
+	left:80px;
+	top:5px;
+	
+}
+.doblabel {
+	margin-left:25px;
+	width:125px;
+	color:white;
+	font-size:18px;
+	font-weight:700;
+}
+.dob {
+	position:relative;
+	left:20px;
+	top:-5px;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 20px;
+	font-size:15px;
+}
+.genderlabel {
+	position:relative;
+	left:450px;
+	top:-35px;
+	color:white;
+	font-weight:700;
+	font-size:18px;
+}
+.gender {
+	position:relative;
+	left:550px;
+	top:-52px;
+	color:#ffffff;
+}
+.emaillabel {
+	position:relative;
+	margin-left:25px;
+	width:125px;
+	color:white;
+	font-size:18px;
+	font-weight:700;
+	
+}
+.email {
+	position: relative;
+	left:20px;
+	top:-5px;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 30px;
+	font-size:15px;
+	
+}
+.passwordlabel {
+	position: relative;
+	left:112px;
+	font-size:18px;
+	color:#ffffff;
+	
+}
+.password {
+	position: relative;
+	left:125px;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 15px;
+	font-size:15px;
+}
+.phonelabel {
+	position:relative;
+	margin-left:25px;
+	width:125px;
+	color:white;
+	font-size:18px;
+	font-weight:700;	
+}
+.phcode {
+	position:relative;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 5px;
+	font-size:15px;
+	
+}
+.phone {
+	position:relative;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 38px;
+	font-size:15px;
+	
+}
+.caddresslabel {
+	position:relative;
+	margin-left:25px;
+	width:125px;
+	color:white;
+	font-size:18px;
+	font-weight:700;
+}
+.caddress {
+	position:relative;
+	left: 10px;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 65px;
+	font-size:15px;
+}
+.ccitylabel {
+	position:relative;
+	margin-left:550px;
+	top:-60px;
+	width:125px;
+	color:white;
+	font-size:18px;
+	font-weight:700;
+}
+.ccity {
+	position:relative;
+	left: 10px;
+	top:-60px;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 5px;
+	font-size:15px;
+}
+.cstatelabel {
+	position:relative;
+	margin-left:25px;
+	width:125px;
+	color:white;
+	font-size:18px;
+	font-weight:700;
+}
+.cstate {
+	position:relative;
+	left: 10px;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 5px;
+	font-size:15px;
+}
+.ccountrylabel {
+	position:relative;
+	margin-left:25px;
+	width:125px;
+	color:white;
+	font-size:18px;
+	font-weight:700;
+}
+.ccountry {
+	position:relative;
+	left: 10px;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 5px;
+	font-size:15px;
+}
+.cpincodelabel {
+	position:relative;
+	margin-left:25px;
+	width:125px;
+	color:white;
+	font-size:18px;
+	font-weight:700;
+}
+.cpincode {
+	position:relative;
+	left: 10px;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 12px;
+	font-size:15px;
+}
+.paddresslabel {
+	position:relative;
+	margin-left:25px;
+	width:125px;
+	color:white;
+	font-size:18px;
+	font-weight:700;
+}
+.paddress {
+	position:relative;
+	left: 10px;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 65px;
+	font-size:15px;
+}
+.pcitylabel {
+	position:relative;
+	margin-left:25px;
+	width:125px;
+	color:white;
+	font-size:18px;
+	font-weight:700;
+}
+.pcity {
+	position:relative;
+	left: 10px;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 10px;
+	font-size:15px;
+}
+.pstatelabel {
+	position:relative;
+	margin-left:25px;
+	width:125px;
+	color:white;
+	font-size:18px;
+	font-weight:700;
+}
+.pstate {
+	position:relative;
+	left: 10px;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 5px;
+	font-size:15px;
+}
+.pcountrylabel {
+	position:relative;
+	margin-left:25px;
+	width:125px;
+	color:white;
+	font-size:18px;
+	font-weight:700;
+}
+.pcountry {
+	position:relative;
+	left: 10px;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 5px;
+	font-size:15px;
+}
+.ppincodelabel {
+	position:relative;
+	margin-left:25px;
+	width:125px;
+	color:white;
+	font-size:18px;
+	font-weight:700;
+}
+.ppincode {
+	position:relative;
+	left: 10px;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 10px;
+	font-size:15px;
+}
+.registerbtn {
+	position:relative;
+	background-color:green;
+	left: 350px;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 15px;
+	font-size:15px;
+}
+.interestlabel {
+	position:relative;
+	margin-left:27px;
+	width:125px;
+	color:white;
+	font-size:18px;
+	font-weight:700;
+}
+.interest {
+	position:relative;
+	left: 20px;
+	top: 20px;
+	line-height:40px;
+	border-radius: 6px;
+	padding:0 30px;
+	font-size:15px;
+}
+
+</style>
+</head>
+<body>
+<img src="../Downloads/logo.jpg" style="margin-left:20px;" width="100px" height="100px" alt="logo">
+  
+ <div class="regform" <center>  <h1> User Registeration </h1> </center>  </div>
+ <div class="main">
+ <form> 
+ <div id="name">
+ <h2 class="name">Name</h2>
+  <label class="firstlabel"> First Name </label>   
+<input class="firstname" type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+<label class="middlelabel"> Middle Name </label>   
+<input class="middlename" type="text" name="middlename" placeholder="Middlename" size="15" required />   
+<label class="lastlabel"> Last Name </label>    
+<input class="lastname" type="text" name="lastname" placeholder="Lastname" size="15"required /> 
+</div>  
+<div>  
+<label class="doblabel">   
+Date of Birth  
+</label>   
+ <input class="dob" type="date" name="date"
+</div>  
+<div>  
+<label class="genderlabel">   
+Gender  
+</label><br> 
+<div class="gender" >
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other 
+</div> 
+</div>  
+ <label class="emaillabel" for="email"><b>Email</b></label>  
+ <input class="email" type="text" placeholder="Enter Email" name="email" required>  
+  
+    <label class="passwordlabel" for="psw"><b>Password</b></label>  
+    <input class="password"	type="password" placeholder="Enter Password" name="psw" required>  
+  <br><br>
+<label class="phonelabel">   
+Phone :  
+</label>  
+<input class="phcode" type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
+<input class="phone" type="text" name="phone" placeholder="phone no." size="10"/ required>   
+<label class="interestlabel">Personal Interest</label>
+<select class="interest" name="interest" multiple>
+<option value="sports">Sports</option>
+<option value="books">Books</option>
+<option value="computer & software">Computer & software</option>
+<option value="fashion">Fashion</option>
+<option value="photography">photography</option>
+<option value="gadgets">Gadgets</option>
+</select>
+<br><br><br><br><br>
+<label style="font-size:22px;color:white;"><center><b>CURRENT ADDRESS</b> </center></label>
+<br><br>
+<label class="caddresslabel">
+Address </label> 
+<input class="caddress" type="text" name="caddress" placeholder="street address" size="30" required />
+<br><br>
+<label class="ccitylabel">City </label>
+<input class="ccity"type="text" name="city" placeholder="city" size="15" required />
+<label class="cstatelabel">State <label>
+<input class="cstate" type="text" name="state" placeholder="state"  size="15" required />
+<label class="ccountrylabel">Country <label>
+<input class="ccountry" type="text" name="country" placeholder="country" size="15" required />
+<label class="cpincodelabel">Pincode <label>
+<input class="cpincode"type="text" name="pin-code" placeholder="pin code" size="10" required />
+</div>
+<br><br>
+<label style="font-size:22px;color:white;"><center><b>PERMANENT ADDRESS</b></center></label>
+<br><br>
+<label class="paddresslabel">
+Address <label> 
+<input class="paddress" type="text" name="paddress" placeholder="street address" size="30" required />
+<label class="pcitylabel">City </label>
+<input class="pcity" type="text" name="city" placeholder="city" size="15" required />
+<br><br>
+<label class="pstatelabel">State </label>
+<input class="pstate"type="text" name="state" placeholder="state"  size="15" required />
+<label class="pcountrylabel">Country </label>
+<input class="pcountry" type="text" name="country" placeholder="country" size="15" required />
+<label class="ppincodelabel">Pincode </label>
+<input class="ppincode"type="text" name="pin-code" placeholder="pin code" size="10" required />  
+<br><br><br>
+    <button type="submit" class="registerbtn">Register</button>    
+</form>  
+</body>
+</html>
